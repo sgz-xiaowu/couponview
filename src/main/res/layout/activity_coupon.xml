@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dawei.coupon_view.CouponActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"/>
+
+        <!--阴影-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+            <TextView
+                android:id="@+id/text_shadow"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:background="@drawable/group"
+                android:elevation="4dp"
+                android:text="@string/mass_desc_text"/>
+        </LinearLayout>
+
+        <!--text view 展示/收缩 更多-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_more_less"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="@string/mass_desc_text"/>
+            <Button
+                android:id="@+id/btn_expand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="@string/btn_expand"/>
+        </LinearLayout>
+        <!--image view 挖洞测试-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.dawei.coupon_view.MyImageJava
+                android:id="@+id/image"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                android:contentDescription="川川"/>
+            <LinearLayout
+                android:id="@+id/ll_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/cc"
+                    android:contentDescription="川川"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--透明度alpha调整编辑框-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/edit_alpha"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="请输入透明度alpha" />
+            <Button
+                android:id="@+id/btn_change"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确定"/>
+        </LinearLayout>
+        <!--recycler view-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

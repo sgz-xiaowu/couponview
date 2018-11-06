@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:coupon="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/coupon_card_margin_horizon"
+    android:layout_marginRight="@dimen/coupon_card_margin_horizon"
+    android:orientation="horizontal">
+
+    <com.dawei.coupon_view.common.ClipRightLinearLayout
+        android:id="@+id/left_group"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        coupon:topCircleColor="#F2F2F2"
+        coupon:bottomCircleColor="#F2F2F2"
+        coupon:circleRadius="6dp"
+        android:orientation="vertical"/>
+
+    <com.dawei.coupon_view.common.ClipLeftLinearLayout
+        android:id="@+id/right_group"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="2.32"
+        android:gravity="center_vertical"
+        coupon:topCircleColor="#F2F2F2"
+        coupon:bottomCircleColor="#F2F2F2"
+        coupon:circleRadius="6dp"
+        android:orientation="vertical">
+
+    </com.dawei.coupon_view.common.ClipLeftLinearLayout>
+</LinearLayout>

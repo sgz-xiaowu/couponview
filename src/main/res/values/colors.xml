@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--优惠券类型：
+      全部=0; (默认)
+      红券=1;
+      蓝券=2;
+      店铺券=3;
+      购物券=4;
+      理财券=5;
+      虚拟券=6;
+      美券=7;
+      运费券=8
+-->
+    <!--优惠券代表颜色：
+          渐变开始start，渐变结束end
+          虚拟券色值 = 红券色值
+          购物券色值 = 店铺券色值(商品券)
+     -->
+    <color name="coupon_1_start_color">#FA396D</color>
+    <color name="coupon_1_end_color">#EB265A</color>
+    <color name="coupon_2_start_color">#34A7ED</color>
+    <color name="coupon_2_end_color">#55BEFD</color>
+    <color name="coupon_3_start_color">#51AD2A</color>
+    <color name="coupon_3_end_color">#5ACC29</color>
+    <color name="coupon_4_start_color">#51AD2A</color>
+    <color name="coupon_4_end_color">#5ACC29</color>
+    <color name="coupon_5_start_color">#E6BA5C</color>
+    <color name="coupon_5_end_color">#D49C3B</color>
+    <color name="coupon_6_start_color">#FA396D</color>
+    <color name="coupon_6_end_color">#EB265A</color>
+    <color name="coupon_7_start_color">#D12EB6</color>
+    <color name="coupon_7_end_color">#F048D4</color>
+    <color name="coupon_8_start_color">#FF9100</color>
+    <color name="coupon_8_end_color">#FFB300</color>
+</resources>
